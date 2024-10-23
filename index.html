@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functional_Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h4>Calculator</h4>
+    <div id="background">
+        <div id="mainDiv">
+            <label for="companyName">
+            <h4 id="companyName"><i><u>panasonic</u></i></h4>
+    <form>
+         <input type="text" id="Screen" name="ScreenD">
+         <div id="button_Div">
+            <input type="button" value="AC"  class="btn" onclick="ScreenD.value = ''">
+            <input type="button" value="Del" class="btn" onclick="ScreenD.value = ScreenD.value.slice(0, -1)">
+            <input type="button" value="%"  class="btn" onclick="ScreenD.value += '%'">
+            <input type="button" id ="operator1" value="/"  class="btn" onclick="ScreenD.value += '/'">
+    <div>
+        <input type="button" value="7"  class="btn" onclick="ScreenD.value += '7'">
+        <input type="button" value="8" class="btn" onclick="ScreenD.value += '8'">
+        <input type="button" value="9"  class="btn" onclick="ScreenD.value += '9'">
+        <input type="button"  id ="operator2" value="*"  class="btn" onclick="ScreenD.value += '*'">     
+    </div>
+    <div>
+        <input type="button" value="4"  class="btn" onclick="ScreenD.value += '4'">
+        <input type="button" value="5" class="btn" onclick="ScreenD.value += '5'">
+        <input type="button" value="6"  class="btn" onclick="ScreenD.value += '6'">
+        <input type="button"  id ="operator3" value="-"  class="btn" onclick="ScreenD.value += '-'">
+</div>
+<div>
+    <input type="button" value="1" class="btn" onclick="ScreenD.value += '1'">
+    <input type="button" value="2" class="btn" onclick="ScreenD.value += '2'">
+    <input type="button" value="3" class="btn" onclick="ScreenD.value += '3'">
+    <input type="button" id ="operator4" value="+" class="btn" onclick="ScreenD.value += '+'">
+</div>       
+<div>
+    <input type="button" value="0" class="btn" onclick="ScreenD.value +='0'">
+    <input type="button" value="." class="btn" onclick="ScreenD.value += '.'">
+    <input type="button"  value="off" class="btn" onclick="offFunc()">
+    <input type="button"  value="on" class="btn" onclick="onFunc()">
+
+    <input type="button"  id ="operator5" value="=" class="btn" onclick= "ScreenD.value = eval(ScreenD.value)">
+</div>  
+</form>     
+         </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
